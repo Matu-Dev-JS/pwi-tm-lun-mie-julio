@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Formulario de registro</h1>
+        <div>
+            <label for="fullname">Ingrese su nombre completo:</label><!-- indicar que se debe escribir en el input -->
+            <input id="fullname" type="text">
+        </div>
+        <div>
+            <label for="mail">Ingrese su email:</label><!-- indicar que se debe escribir en el input -->
+            <input id="mail" type="email">
+        </div>
+        <div>
+            <label for="password">Ingrese su contraseña:</label><!-- indicar que se debe escribir en el input -->
+            <input id="password" type="password">
+        </div>
+        <div>
+            <label for="recibo-sueldo">Adjunte su archivo:</label><!-- indicar que se debe escribir en el input -->
+            <input id="recibo-sueldo" type="file">
+        </div>
+        <div>
+            <label for="fecha-inicio">Ingrese fecha inicio:</label><!-- indicar que se debe escribir en el input -->
+            <input id="recibo-sueldo" type='datetime-local'>
+
+            <!-- types:
+            date fecha DD/MM/YYY
+            time HH/MM
+            datetime-local DD/MM/YYY, HH/MM
+
+            -->
+        </div>
+        <input type="submit"><!-- Para enviar formularios -->
+    </form>
+</body>
+</html>
