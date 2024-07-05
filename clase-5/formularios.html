@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    MALA PRACTICA
+    <fieldset>
+        <legend>Formulario de registro</legend> -->
+        <form>
+            <h1>Formulario de registro</h1>
+            <div>
+                <label for="fullname">Ingrese su nombre completo:</label><!-- indicar que se debe escribir en el input -->
+                <input id="fullname" type="text" name="fullname" maxlength="5" minlength="2" required placeholder="John Doe">
+            </div>
+            <div>
+                <label for="mail">Ingrese su email:</label><!-- indicar que se debe escribir en el input -->
+                <input id="mail" type="email" name="email" placeholder="jonhdoe@gmail.com">
+            </div>
+            <div>
+                <label for="password">Ingrese su contraseña:</label><!-- indicar que se debe escribir en el input -->
+                <input id="password" type="password" name="password" minlength="8" required placeholder="pepe123#">
+                <span>Debe contener: </span>
+            </div>
+            <div>
+                <label for="recibo-sueldo">Adjunte su archivo:</label><!-- indicar que se debe escribir en el input -->
+                <input id="recibo-sueldo" type="file" name="recibo-sueldo">
+            </div>
+            <div>
+                <label for="fecha-inicio">Ingrese fecha inicio:</label><!-- indicar que se debe escribir en el input -->
+                <input id="fecha-inicio" type='datetime-local' name="fecha-incio">
+    
+                <!-- types:
+                date fecha DD/MM/YYY
+                time HH/MM
+                datetime-local DD/MM/YYY, HH/MM
+    
+                -->
+            </div>
+    
+            <div>
+                <label>Seleccione su lenguaje preferido:</label>
+                <div>
+                    <label for="html">HTML:</label>
+                    <input 
+                        type="radio" 
+                        name="lenguaje-preferido" 
+                        id="html"
+                    >
+                    <label for="css">CSS:</label>
+                    <input 
+                        type="radio" 
+                        name="lenguaje-preferido" 
+                        id="css"
+                    >
+                    <label for="js">JS:</label>
+                    <input 
+                        type="radio" 
+                        name="lenguaje-preferido" 
+                        id="js"
+                    >
+                </div>
+            </div>
+    
+            <div>
+                <label for="">Seleccione que tecnologias conoce:</label>
+                <div>
+                    <label for="sql">SQL:</label>
+                    <input id="sql" type="checkbox" name="tecnologia-conocida">
+                </div>
+                <div>
+                    <label for="html-lenguaje-conocido">HTML:</label>
+                    <input id="html-lenguaje-conocido" type="checkbox" name="tecnologia-conocida">
+                </div>
+                <div>
+                    <label for="git-lenguaje-conocido">GIT:</label>
+                    <input id="git-lenguaje-conocido" type="checkbox" name="tecnologia-conocida">
+                </div>
+                <div>
+                    <label for="python-lenguaje-conocido">python:</label>
+                    <input id="python-lenguaje-conocido" type="checkbox" name="tecnologia-conocida">
+                </div>
+                <div>
+                    <label for="java-lenguaje-conocido">Java:</label>
+                    <input id="java-lenguaje-conocido" type="checkbox" name="tecnologia-conocida">
+                </div>
+                <div>
+                    <label for="aws-lenguaje-conocido">AWS:</label>
+                    <input id="aws-lenguaje-conocido" type="checkbox" name="tecnologia-conocida">
+                </div>
+            </div>
+            <div>
+                <label for="provincia">Seleccione su provincia</label>
+                <select id="provincia" name="provincia">
+                    <option value="bs-as">Buenos aires</option>
+                    <option value="men">Mendoza</option>
+                    <option value="cha">Chaco</option>
+                    <option value="">Cordoba</option>
+                    <option value="" >Jujuy</option>
+                    <option value="snt-fe">Santa fe</option>
+                    <option disabled selected>No seleccionado</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Ingrese un mensaje corto:</label>
+                <textarea id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
+            </div>
+    
+            <!-- <button type="button">Verificar valores</button> --><!-- Cuando queremos hacer un boton generico en el form -->
+            <!-- <button type="submit">Registrar</button> --><!-- Cuando queremos hacer un submit sin usar input type submit -->
+            <input type="submit" value="Registrar"><!-- Para enviar formularios -->
+            <input type="reset">
+        </form>
+    <!-- </fieldset> -->
+    
+</body>
+</html>
