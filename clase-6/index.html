@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* Selector universal, llama a todos los elementos */
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            /* color: red !important; */
+        }
+        /* *{
+            color: rgb(9, 255, 0) !important;
+        } */
+        /* El navegador interpreta CSS */
+
+        /* CSS necesita de selectores */
+
+        /* Selector de elementos */
+        h1{
+            color: rgb(218, 96, 96);
+            background-color: green;
+        }
+        
+        /*  h1{
+            color: blue;
+            background-color: blueviolet;
+        } */
+
+        /* Selector de clases */
+        .titulo-especial{
+            color: violet;
+        }
+       /*  .pepe{
+            background-color: aqua;
+        } */
+        /* 
+        camelCase: 
+        cajaEspecial
+        computadoraEspecial
+        
+        */
+        /* Selector de ID */
+        #super-especial{
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline styles | MALA PRACTICA -->
+    <!-- 
+    <h1 style="color: green;">Hola mundo</h1>
+    <h1 style="color: rgb(88, 171, 88);">Hola mundo</h1>
+    <h1 style="color: green;">Hola mundo</h1> 
+    -->
+    <h1>Hola mundo</h1>
+    <h1 class="titulo-especial pepe">Hola mundo</h1>
+    <h1 class="titulo-especial" id="super-especial" >Hola mundo</h1>
+    <h1>Hola mundo</h1>
+    <h2 class="titulo-especial">Hola</h2>
+    <div class="product-card">
+        <div class="product-card__header">
+            <h3>Tv samsung</h3>
+            <span>33%off</span>
+            <div class="product-card__image-container">
+                <img src="" alt="">
+            </div>
+            <div class="product-card__controls">
+                <button>Comprar</button>
+                <button>Like</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
