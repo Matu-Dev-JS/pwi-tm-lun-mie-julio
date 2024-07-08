@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p{ /* 1 punto de especificidad */
+            color: red;
+            font-size: 25px;
+        }
+
+        main .hero p{ /* 12 puntos de especificidad */
+            color: blueviolet;
+        }
+        .hero p{ /* 11 puntos de especificidad */
+            color: rgb(44, 106, 49);
+        }
+        .titulo{
+            color: rgb(46, 46, 46);
+            font-size: 40px;
+            text-decoration: 4px double underline overline;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 1px;
+            word-spacing: 10px;
+        }
+        a{
+            text-decoration: none;
+            background-color: rgb(63, 63, 63);
+            color: white;
+            /* border-radius: 8px; */
+            border-top-right-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section class="hero">
+            <h1 class="titulo">
+                Titulo de mi pagina
+            </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates omnis id incidunt, laborum quae odit ab libero sint nemo. Repudiandae qui, nobis ratione voluptate aperiam error aut expedita quos sint!</p>
+            <a href="#">Link a clase X</a>
+        </section>
+        <section class="services">
+            <h2 class="titulo">
+                Seccion de servicios
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates omnis id incidunt, laborum quae odit ab libero sint nemo. Repudiandae qui, nobis ratione voluptate aperiam error aut expedita quos sint!</p>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
