@@ -1,0 +1,54 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+section .card-review{
+    background-color: #fafbff;
+    padding: 32px;
+    width: 360px;
+    color:#2f1c6a;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+section .card-review .card-review-content img{
+    width: 220px;
+}
+
+section .card-review .card-review-content p{
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+section .card-review .card-review-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+section .card-review .rating{
+    display: flex;
+    gap: 8px;
+    font-size: 18px;
+}
+
+section .card-review .card-review-footer .bi-star-fill{
+    color: #01B292;
+}

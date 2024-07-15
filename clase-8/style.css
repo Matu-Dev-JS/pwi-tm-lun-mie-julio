@@ -1,0 +1,51 @@
+/* Estamos trayendo otro css */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* Estamos trayendo una fuente */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Normalizacion */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    
+    font-family: "DM Sans", sans-serif;
+}
+
+.padre{
+    background-color: green;
+    height: 100vh; /* Viewport height */
+    width: 100vw; /* Viewport width */
+    display: flex;/* Esta propiedad activa flexbox */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.hijo{
+    width: 200px;
+    height: 300px;
+    border: yellow solid 1px;
+    border-radius: 10px;
+}
+
+.hijo:nth-child(1){
+    background-color: rgb(61, 234, 124);
+}
+
+.hijo:nth-child(2){
+    background-color: red;
+}
+
+.hijo:nth-child(3){
+    background-color: rgb(41, 44, 215);
+}
+
+.bi-star-fill{
+    color: red;
+    font-size: 24px;
+}
