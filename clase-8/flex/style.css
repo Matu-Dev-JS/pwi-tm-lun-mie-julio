@@ -20,16 +20,16 @@ h1{
     background-color: green;
    /*  height: 100vh; */ /* Viewport height */
     /* width: 100vw; */ /* Viewport width */
-    max-width: calc(200px * 4 + 20px * 3);
+
     display: flex;/* Esta propiedad activa flexbox */
     flex-direction: row;
-   /*  gap: 20px; */
-    row-gap: 80px;
-    column-gap: 20px;
-    /* align-items: center; */
+    gap: 20px;
+
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* padding: 0 170px; */
+    height: 100vh;
+
 }
 
 /* 
@@ -43,7 +43,7 @@ Cuanto padding tengo que darle al padre para que siempre hayan 5 hijos?
 1200px-860px= 340px / 2 = padding-al-costado
 */
 .hijo{
-    width: 200px;
+    
     height: 300px;
     border: yellow solid 1px;
     border-radius: 10px;
@@ -51,14 +51,20 @@ Cuanto padding tengo que darle al padre para que siempre hayan 5 hijos?
 }
 
 .hijo:nth-child(1){
+    order: 1;
+    flex: 1;
     background-color: rgb(61, 234, 124);
 }
 
 .hijo:nth-child(2){
+    flex: 2;
+    order: 3;
     background-color: red;
 }
 
 .hijo:nth-child(3){
+    flex: 1;
+    order: 2;
     background-color: rgb(41, 44, 215);
 }
 
