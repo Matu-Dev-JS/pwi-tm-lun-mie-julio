@@ -1,0 +1,63 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    width: 100vw;
+    height: 100vh;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hijo{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+
+.hijo:nth-child(1){
+    background-color: aquamarine;
+}
+.hijo:nth-child(2){
+    background-color: rgb(131, 49, 17);
+}
+.hijo:nth-child(3){
+    background-color: rgb(67, 52, 134);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.btn-menu{
+    /* Ocultar un elemento */
+    display: none;
+}
+
+
+
+/* Media query */
+/* Si la pagina tiene entre 0 y 320px este bloque de codigo se activara */
+@media screen and (max-width: 520px) {
+    .padre{
+        background-color: blueviolet;
+        flex-direction: column;
+    }
+    .btn-menu{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+}
+

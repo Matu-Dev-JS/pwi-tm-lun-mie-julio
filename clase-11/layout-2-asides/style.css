@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    background-color: blue;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.left{
+    height: calc(100vh - 100px); 
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 350px;
+    background-color: blueviolet;
+    
+}
+
+main{
+    width: calc(100vw - 350px - 100px);
+    margin-left: 350px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.especial{
+    width: 100px;
+    height: calc(100vh - 100px);
+    background-color: blueviolet;
+    position: fixed;
+    top: 100px;
+    right: 0;
+}

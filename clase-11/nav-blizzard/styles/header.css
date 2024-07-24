@@ -1,0 +1,110 @@
+header{
+    display: flex;
+    margin: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #383c54;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+header nav ul{
+    display: flex;
+
+    align-items: center;
+}
+header .icon{
+    width: 80px;
+    margin: 0 16px;
+}
+header .icon a img {
+    width: 80px;
+}
+
+
+header nav ul li{
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+header nav ul li a{
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+header nav ul li:hover{
+    background-color: #40455c;
+}
+
+header nav ul li a span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+header nav ul li a .bi-chevron-down{
+    font-size: 8px;
+}
+
+.btn-download{
+    background-color: #060c11;
+    border: none;
+    padding: 0 16px;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.btn-download img{
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.mobible-header{
+    display: none;
+}
+.btn-header{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    /* padding: ; */
+}
+
+.btn-header:hover{
+    background-color: #40455c;
+}
+
+.icon-mobible img{
+    width: 64px;
+}
+@media screen and (max-width: 1200px) {
+    .mobible-header{
+        display: flex;
+        margin: 0;
+        border-radius: 0;
+    }
+    header{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+}
