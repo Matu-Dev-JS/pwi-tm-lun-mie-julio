@@ -1,0 +1,17 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root{
+    --text-1: #2f166a;
+    --text-2: #673de6;
+    --text-3: #d5dfff;
+    --background-1: #FFFFFF;
+    --background-2: #F4F5FF;
+    --border-1: 1px solid var(--text-3);
+}

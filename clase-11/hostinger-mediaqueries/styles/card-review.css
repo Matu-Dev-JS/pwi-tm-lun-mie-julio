@@ -1,0 +1,81 @@
+.reviews{
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cards-review-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.card-review {
+    display: flex;
+    flex-direction: column;
+    border: var(--border-1);
+    border-radius: 16px ;
+    overflow: hidden;
+    max-width: 506px;
+}
+
+.card-review .card-review-author {
+    display: flex;
+    padding: 20px 32px;
+    background-color: var(--background-2);
+    gap: 10px;
+}
+
+.card-review .card-review-author img {
+    width: 48px;
+    height: 48px;
+}
+
+.card-review .card-review-author .card-review-author-info {}
+
+.card-review .card-review-content {
+    padding: 32px 32px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-review .card-review-content .rating-container {
+    color: var(--text-2);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 774px ) {
+    .card-review{
+        max-width: 686px;
+    }
+}
+
+@media screen and (min-width: 1025px ) {
+    .card-review .card-review-author{
+        height: 112px;
+        align-items: center;
+    }
+    .cards-review-container{
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 1128px;
+    }
+
+    .card-review{
+        flex: 1;
+        
+    }
+    .reviews{
+        align-items: center;
+    }
+
+    .card-review .card-review-content p{
+        height: 186px;
+    }
+}
