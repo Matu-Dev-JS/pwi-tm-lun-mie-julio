@@ -132,3 +132,32 @@ categorias = ['TECNOLOGIA', 'CIENCIA']
 
 por cada producto vamos a hacer producto.categorias.includes(categoriaSeleccionada)
 */
+
+
+/* 
+1)
+Crear una funcion que reciba un array de letras y se encargue de devolver un string con todas las letras concatenadas
+
+Ejemplo:
+
+concatenar(['a', 'b', 'c'])
+devolvera 'abc'
+
+2)
+Crear una funcion que reciba un array de numeros y devuelva el mayor de todos
+
+Ejemplo:
+
+mayor([2, 3, 4, 5, 6])
+devolvera 6
+
+3)
+Crear una funcion llamada calcular, que reciba una operacion (la cual puede ser '+', '-', '*', '/') y dos numeros y devuelva el resultado de la operacion
+
+Ejemplo:
+
+calcular('+', 2, 3)
+devolvera 5
+
+
+*/
