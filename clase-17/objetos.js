@@ -151,6 +151,6 @@ const productos = [
 /* console.log(productos[1]) */
 
 
-for(let producto of productos ){
+for(const producto of productos ){
     console.log(`El producto con id ${producto.id} se llama ${producto.nombre}`)
 }
