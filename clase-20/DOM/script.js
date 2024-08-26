@@ -60,8 +60,10 @@ const productos = [
 
 //Inicialmente el innerHTML de caja es un ''
 
+/* let listaDeProductosHTML = ''
+
 for(let producto of productos){
-    caja.innerHTML = caja.innerHTML + `
+    listaDeProductosHTML = listaDeProductosHTML + `
     <div class="producto">
         <h2>${producto.nombre}</h2>
         <img src="${producto.thumbnail}" alt="${producto.nombre}">
@@ -74,4 +76,51 @@ for(let producto of productos){
         <hr>
     </div>
     `
+}
+
+caja.innerHTML = listaDeProductosHTML */
+
+/* Usar fragmentos */
+
+const usuarios = [
+    {
+        nombre: 'Pepe',
+        id: 1,
+    },
+    {
+        nombre: 'Maria',
+        id: 2,
+    },
+    {
+        nombre: 'Pedro',
+        id: 3,
+    }
+]
+//Llamar a un elemento por ID
+/* const cajaProductos = document.querySelector('#caja') */
+//Llamar a un elemento por clase
+/* const cajaUsuarios = document.querySelector('.usuarios') */
+
+
+//SessionStorage & LocalStorage
+/* let nombre = prompt('Ingrese su nombre') */
+
+/* localStorage.setItem('theme', 'blanco') */
+
+let theme = localStorage.getItem('theme')
+console.log(theme)
+if(!theme){
+    theme = prompt('Seleccione un tema:\n-blanco\n-oscuro')
+    /* Si quieren validan */
+    localStorage.setItem('theme', theme)
+}
+
+const body = document.getElementById('body')
+body.classList.add('mode-' + theme)
+
+const cambiarTheme = () => {
+    theme = prompt('Seleccione un tema:\n-blanco\n-oscuro')
+    localStorage.setItem('theme', theme)
+
+    body.classList.add('mode-' + theme)
 }
