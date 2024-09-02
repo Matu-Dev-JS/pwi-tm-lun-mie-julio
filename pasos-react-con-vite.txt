@@ -1,0 +1,16 @@
+Abrir terminal
+
+ejecutamos: 
+npm create vite@latest
+(si nos aparece que debemos instalar algo le damos Y)
+seleccionamos un nombre
+seleccionamos un nombre de paquete
+seleccionamos como framework REACT
+seleccionamos como variante javascript o javascript-swc
+
+Abrimos con VSC la carpeta que se creo del proyecto
+
+Abrimos terminal
+ejecutamos:
+npm install
+npm run dev
