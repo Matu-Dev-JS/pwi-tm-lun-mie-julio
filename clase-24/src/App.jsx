@@ -52,6 +52,10 @@ function App() {
 	let cargando = false
 	let status = 'ERROR' /* puede ser PENDIENTE, FINALIZADO, ERROR */
 
+	let compartiendo = null 
+	let cargando_vista = null
+	let status_vista_compartida = null
+
 	return (
 		<div>
 			{
@@ -85,6 +89,32 @@ function App() {
           		{usuarioRol === 'PREMIUM' ? 'Premium' : 'Free Trial'}
         	</span>  
 			<h1>{nombre}</h1>
+
+			<div>
+				{
+					!compartiendo 
+					? <div>Nadie comparte</div>
+					: (
+						cargando_vista 
+						? <LoadingView nombre={compartiendo}/>
+						: (
+							status_vista_compartida 
+							? <h2>Vista compartida {compartiendo}</h2>
+							: <h2>Error al compartir vista {compartiendo}</h2>
+						)
+					)
+				}
+    		</div>
+ 		 
+		</div>
+	)
+}
+
+const LoadingView = (props) => {
+	return (
+		<div>
+			<img src="" alt="" />
+			<h2>Cargando vista de {props.nombre}</h2>
 		</div>
 	)
 }
