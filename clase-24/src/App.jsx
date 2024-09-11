@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function App() {
 
@@ -52,12 +52,49 @@ function App() {
 	let cargando = false
 	let status = 'ERROR' /* puede ser PENDIENTE, FINALIZADO, ERROR */
 
-	let compartiendo = null 
-	let cargando_vista = null
+	let compartiendo = 'pepe'
+	let cargando_vista = true
 	let status_vista_compartida = null
 
+	let estaRegistrado = false
+	let inicioSesion = false
+
+
+	/* 
+	AND:
+	Si el primer valor es true devuelve el segundo
+	Si el primer valor es false devuelve el primero
+	*/
+	/* 
+	useState es una funcion nativa de react 
+	nos permite crear estados
+	Recibe el valor inicial de mi estado
+	Retorna un array con 2 elementos
+		El primer elemento es el valor del estado
+		El segundo elemento es la funcion de set
+			La funcion de set es lo que usaremos para cambiar de valor mi estado
+	*/
+	const [contador, setContador] = useState(0)
+
+	const incementar = () => {
+		setContador(contador + 1)
+		console.log(contador)
+
+	}
+	console.log('hola')
 	return (
 		<div>
+			<button>-</button>
+			<span>{contador}</span>
+			<button onClick={incementar}>+</button>
+			<hr />
+			{
+				!estaRegistrado && <a>Registrarse</a>
+			}
+			{
+				inicioSesion && <button>Cerrar sesion</button>
+			}
+
 			{
 				cargando
 				? <h2>Cargando...</h2>
@@ -100,7 +137,7 @@ function App() {
 						: (
 							status_vista_compartida 
 							? <h2>Vista compartida {compartiendo}</h2>
-							: <h2>Error al compartir vista {compartiendo}</h2>
+							: <ErrorView nombre={compartiendo} />
 						)
 					)
 				}
@@ -116,6 +153,15 @@ const LoadingView = (props) => {
 			<img src="" alt="" />
 			<h2>Cargando vista de {props.nombre}</h2>
 		</div>
+	)
+}
+
+const ErrorView = (props) => {
+	return (
+		<>
+			<h2>Error al compartir vista {props.nombre}</h2>
+			<span>Internal Server Error</span>
+		</>
 	)
 }
 
