@@ -81,7 +81,9 @@ function App() {
 		console.log(contador)
 
 	}
+
 	console.log('hola')
+	
 	return (
 		<div>
 			<button>-</button>
