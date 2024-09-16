@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import ContactList from './Components/ContactList/ContactList'
+import listaContactos from './data-example'
 
 function App() {
   /* 
@@ -26,39 +27,14 @@ function App() {
     <div>Juan</div>,
     <div>Pedro</div>
   ] */
-    const listaContactos = [
-      {
-          nombre: 'Pepe Suarez',
-          status: 'CONNECTED',
-          iniciales: 'PS',
-          id: 1
-      },
-      {
-          nombre: 'Maria Gutierrez',
-          status: 'DISCONNECTED',
-          iniciales: 'MG',
-          id: 2
-      },
-      {
-          nombre: 'Juan Perez',
-          status: 'DISCONNECTED',
-          iniciales: 'JP',
-          id: 3
-      },
-      {
-          nombre: 'Pedro Gonzalez',
-          status: 'CONNECTED',
-          iniciales: 'PG',
-          id: 4
-      },
-  ]
+    
   
   return (
     <div>
       
       <div>
         <h1 className='titulo'>Lista de contactos</h1>
-       
+        <img src="/images/captura.png" alt="" />
         <ContactList listaContactos={listaContactos}/>
 
         <ContactList listaContactos={listaContactos}/>
