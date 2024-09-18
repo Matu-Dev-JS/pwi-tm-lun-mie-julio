@@ -2,6 +2,8 @@ import React from 'react'
 import './style.css'
 import ContactList from './Components/ContactList/ContactList'
 import listaContactos from './data-example'
+import { files } from './data-files'
+import FileList from './Components/FileList/FileList'
 
 function App() {
   /* 
@@ -33,11 +35,12 @@ function App() {
     <div>
       
       <div>
-        <h1 className='titulo'>Lista de contactos</h1>
-        <img src="/images/captura.png" alt="" />
+        <h1 className='titulo'>Lista de archivos</h1>
+        {/* <img src="/images/captura.png" alt="" />
         <ContactList listaContactos={listaContactos}/>
-
-        <ContactList listaContactos={listaContactos}/>
+        <ContactList listaContactos={listaContactos}/> */}
+        <FileList files={files}/>
+        
       </div>
     </div>
   )
