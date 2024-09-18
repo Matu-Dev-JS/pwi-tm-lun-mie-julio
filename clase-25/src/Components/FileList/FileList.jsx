@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './FileList.css'
+import { FILE_ICONS } from '../../utils/constants'
 
 const FileList = (props) => {
    
@@ -11,12 +12,15 @@ const FileList = (props) => {
     }
     
     const filesListJSX = files.map((item) => {
+        //Icon es un componente
+        const Icon = FILE_ICONS[item.icon]
+
         return (
             <div key={item.id} className='file-list'>
                 {
                     item.tipo === 'folder' 
-                    ?<button onClick={handleToggleList}>{item.title}</button>
-                    :<span>{item.title}</span>
+                    ?<button  onClick={handleToggleList}> <Icon/> {item.title}</button>
+                    :<span> <Icon/> {item.title}</span>
                 }
                 
                 {
