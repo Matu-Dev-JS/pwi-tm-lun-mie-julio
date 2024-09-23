@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "title": "Teclado Mecánico RGB",
+        "price": 4500,
+        "stock": 25,
+        "description": "Teclado mecánico con retroiluminación RGB y switches de alta durabilidad.",
+        "offert": false,
+        "seller": "TechZone",
+        "seller_id": 101
+    },
+    {
+        "id": 2,
+        "title": "Mouse Gamer Inalámbrico",
+        "price": 3000,
+        "stock": 40,
+        "description": "Mouse gamer inalámbrico con sensor óptico de alta precisión y 6 botones programables.",
+        "offert": true,
+        "price_offer": 2700,
+        "seller": "GamerShop",
+        "seller_id": 102
+    },
+    {
+        "id": 3,
+        "title": "Monitor 24'' Full HD",
+        "price": 15000,
+        "stock": 10,
+        "description": "Monitor LED de 24 pulgadas con resolución Full HD y tecnología antireflejos.",
+        "offert": false,
+        "seller": "Displays & More",
+        "seller_id": 103
+    },
+    {
+        "id": 4,
+        "title": "Auriculares Inalámbricos",
+        "price": 5000,
+        "stock": 15,
+        "description": "Auriculares Bluetooth con micrófono y cancelación de ruido.",
+        "offert": true,
+        "price_offer": 4500,
+        "seller": "SoundPro",
+        "seller_id": 104
+    },
+    {
+        "id": 5,
+        "title": "Silla Gamer Ergonómica",
+        "price": 25000,
+        "stock": 5,
+        "description": "Silla gamer ergonómica con soporte lumbar y reposabrazos ajustables.",
+        "offert": false,
+        "seller": "GamerChairs",
+        "seller_id": 105
+    },
+    {
+        "id": 6,
+        "title": "Disco Duro Externo 1TB",
+        "price": 8000,
+        "stock": 30,
+        "description": "Disco duro externo de 1TB con conexión USB 3.0 para transferencia rápida de datos.",
+        "offert": false,
+        "seller": "StorageX",
+        "seller_id": 106
+    },
+    {
+        "id": 7,
+        "title": "Tarjeta Gráfica NVIDIA RTX 3060",
+        "price": 120000,
+        "stock": 7,
+        "description": "Tarjeta gráfica de última generación con 12GB de memoria GDDR6 y soporte para Ray Tracing.",
+        "offert": true,
+        "price_offer": 115000,
+        "seller": "GPUStore",
+        "seller_id": 107
+    },
+    {
+        "id": 8,
+        "title": "Memoria RAM 16GB DDR4",
+        "price": 9000,
+        "stock": 20,
+        "description": "Memoria RAM DDR4 de 16GB con velocidad de 3200MHz para alto rendimiento.",
+        "offert": false,
+        "seller": "MemoryMasters",
+        "seller_id": 108
+    },
+    {
+        "id": 9,
+        "title": "Procesador AMD Ryzen 5",
+        "price": 42000,
+        "stock": 12,
+        "description": "Procesador AMD Ryzen 5 de 6 núcleos y 12 hilos, ideal para gaming y creación de contenido.",
+        "offert": true,
+        "price_offer": 40000,
+        "seller": "CPUWorld",
+        "seller_id": 109
+    },
+    {
+        "id": 10,
+        "title": "Placa Madre ATX",
+        "price": 15000,
+        "stock": 18,
+        "description": "Placa madre ATX con soporte para procesadores Intel de 10ª generación y múltiples ranuras PCIe.",
+        "offert": false,
+        "seller": "MotherboardShop",
+        "seller_id": 110
+    }
+]
