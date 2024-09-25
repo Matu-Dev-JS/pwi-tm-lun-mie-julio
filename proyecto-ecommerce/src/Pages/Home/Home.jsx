@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Footer, Header } from '../../Components'
 import useProducts from '../../hooks/useProducts'
+import { Link } from 'react-router-dom'
 
 
 
@@ -14,36 +15,29 @@ const solicitarDatos = async () => {
 
 
 const Home = () => {
-  const objeto = useProducts()
-  console.log(objeto)
+  //Desestructuracion de objeto
+  const {isLoading, products} = useProducts()
+  
 
-  /* solicitarProductos() */
-  //setTimeout es una funcion nativa de JS que recibe una callback y un numero
-  //callback = accion a ejecutar
-  //numero = duracion de el atraso en milisegundos
-  /* 
-  setTimeout(
-    () => {
 
-      console.log(resultado)
-    },
-    3000
-  ) */
   return (
     <>
         <Header/>
         <main>
             {
-              objeto.isLoading
+              isLoading
               ? <h2>Cargando</h2>
               : <div>
-                {objeto.products.map( 
+                {products.map( 
                   (producto)=>{
                     return (
                       <div key={producto.id}>
                         <h3>{producto.title}</h3>
                         <img src="" alt="" />
                         <span>Precio: ${producto.price}</span>
+                        <Link to={`/product/detail/${producto.id}`}>
+                          Ver detalle
+                        </Link>
                       </div>
                     )
                   } 
