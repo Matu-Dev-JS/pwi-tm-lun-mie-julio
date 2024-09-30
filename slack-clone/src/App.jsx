@@ -1,6 +1,6 @@
 import React from 'react'
 import ChannelList from './Components/ChannelList/ChannelList'
-
+import Chatlist from './Components/ChatList/ChatList'
 
 function App() {
 
@@ -25,15 +25,7 @@ function App() {
     }
 
   ]
-  const resultado = mensajes.map((mensaje) => {
-    return (
-      <div key={mensaje.id}>
-        <span>{mensaje.author} {mensaje.hour}</span>
-        <p>{mensaje.text}</p>
-      </div>
-    )
-  })
-
+ 
 
   /* 
   [
@@ -67,11 +59,9 @@ function App() {
     <>
       <h1>Hola mundo</h1>
       {/* Aqui iria la logica del mapeo */}
-      {
-        resultado
-      }
+    
 
-
+      <Chatlist mensajes={mensajes}/>
       <ChannelList canales={canales} titulo={'canales importantes'}/>
       <ChannelList canales={canales} titulo={'mensajes directos'}/>
     </>
@@ -79,3 +69,6 @@ function App() {
 }
 
 export default App
+/* 
+MERN = MongoDB Express React NodeJS
+*/

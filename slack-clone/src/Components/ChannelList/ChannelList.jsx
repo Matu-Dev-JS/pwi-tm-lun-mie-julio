@@ -1,24 +1,19 @@
 //Buena practica
 import React from 'react'
+import ChannelItem from '../ChannelItem/ChannelItem'
 
-const ChannelList = (props) => {
-    console.log(props)
-
-    const canalesJSX = props.canales.map((canal) => {
-        return (
-            <div key={canal.id}>
-                <a>
-                    {canal.nombre}
-                </a>
-            </div>
-        )
-    })
+const ChannelList = ({titulo, canales}) => {
 
 
     return (
         <>
-            <h1>{props.titulo}</h1>
-            {canalesJSX}
+            <h1>{titulo}</h1>
+            {
+                canales.map((canal) => {
+                return (
+                   <ChannelItem key={canal.id} nombre={canal.nombre} id={canal.id}/>
+                )})
+            }
         </>
     )
 }
